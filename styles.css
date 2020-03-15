@@ -4,7 +4,7 @@ body {
 	}
 .heading {
 		background-color:#FFDAB9;
-		font-family:Helvetica;
+		font-family: Helvetica;
 		width:50%;
 		margin:auto;
 		}
@@ -14,7 +14,7 @@ body {
 .data {
 		background-color:#FFEFD5;
 		border:none;
-		font-family:Helvetica;
+		font-family: system-ui;
 		width:50%;
 		margin:auto;
 
@@ -37,7 +37,7 @@ border-radius: 5px;
 			display: inline-block;
 			position: relative;
 			cursor: pointer;
-			font-family: Helvetica;
+			font-family: system-ui;
 			font-size: 15px;
 			user-select: none;
 			padding-left: 30px;
@@ -97,7 +97,7 @@ border-radius: 5px;
 .patients {
 
 		border:none;
-		font-family:Helvetica;
+		font-family: system-ui;
 		width:50%;
 		margin:auto;
 		padding-bottom: 15px;
@@ -120,6 +120,14 @@ border-radius: 5px;
 }
 #tbls-heading {
 		margin-top: 50px;
+}
+#empty0, #empty1, #empty2, #empty3, #empty4, #empty5 {
+		font-family: system-ui;
+		font-size: 15px;
+		font-style: italic;
+		font-weight: bold;
+		color: #FF1493;
+
 }
 @media screen and (max-width: 800px) {
 		.heading, .data, .patients {
