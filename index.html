@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width", initial scale=1.0" />
+<title>Registracija</title>
+<link rel="stylesheet" href="styles.css" />
+<meta charset="UTF-8" />
+<script src="getValue.js"></script>
+</head>
+<body>
+	<div class="heading" align="center">
+	<h1>Registracija pas gydytoją turint arba įtarus koronaviruso požymius</h1>
+	<p>Turite arba įtariate koronaviruso požymius? Ši anketa yra skirta registruotis pas gydytoją be bendrosios eilės:
+	užpildę ją galėsite greitai patikrinti savo sveikatos būklę.</p>
+	</div>
+	<div class="data" align="center">
+	<form id="anketa" method="post">
+	<input type="text" class="input-field" size="25" id="name" name="name" placeholder="Vardas" required />
+	<br />
+	<input type="text" class="input-field" size="25" id="lastname" name="lastname" placeholder="Pavardė" required />
+	<br />
+	<p>Kontaktinė informacija</p>
+	<input type="tel" class="input-field" size="20" id="tel" name="tel" pattern="[0-9+]+" placeholder="Telefonas" title="Įveskite tik skaitmenis arba '+'" required />
+	<br />
+	<input type="email" class="input-field" size="25" id="email" name="elpastas" placeholder="El. pašto adresas" title="Įvedimo formatas: pavyzdis@pavyzdis.com" required />
+	<br />
+	<p>Ar pastaruoju metu (nuo vasario pradžios) lanketės Italijoje?</p>
+	<label class="rad">Taip
+	<input type="radio" id="been_to_italy" name="been_to_italy" default value="Taip" checked />
+	<span class="circle"></span>
+	</label>
+	<br />
+	<label class="rad">Ne
+	<input type="radio" id="been_to_italy" name="been_to_italy" value="Ne" />
+	<span class="circle"></span>
+	</label>
+	<br />
+	<p>Pasirinkite pageidaujamą gydytoją iš sąrašo</p>
+	<input name="doctor" id="doctor" placeholder="Pasirinkite gydytoją" title="Pasirinkite gydytoją" class="input-field" list="gydytojai" required />
+	<datalist id="doctor">
+		<option value="Gvidas Januškevičius" />
+		<option value="Karolina Kniežienė" />
+		<option value="Jonas Petraitis" />
+		<option value="Agnė Pociutė" />
+		<option value="Judita Savickienė" />
+		<option value="Andrius Vaišvila" />
+	</datalist>
+	<br />
+	<button type="button" id="submit-btn" onclick="addRow();">Registruotis</button>
+	</form>
+	</div>
+<div class="heading" id="tbls-heading">
+<h1>Gydytojai ir jų pacientai</h1>
+</div>
+<div class="patients">
+<table id="patients0">
+<caption>Gvidas Januškevičius</caption>
+<br />
+<tr>
+<th>Vardas</th>
+<th>Pavardė</th>
+<th>Telefonas</th>
+<th>El. pašto adresas</th>
+<th>Ar lankėsi Italijoje</th>
+</tr>
+</table>
+</div>
+<div class="patients">
+<table id="patients1">
+<caption>Karolina Kniežienė</caption>
+<br />
+<tr>
+<th>Vardas</th>
+<th>Pavardė</th>
+<th>Telefonas</th>
+<th>El. pašto adresas</th>
+<th>Ar lankėsi Italijoje</th>
+</tr>
+</table>
+</div>
+<div class="patients">
+<table id="patients2">
+<caption>Jonas Petraitis</caption>
+<br />
+<tr>
+<th>Vardas</th>
+<th>Pavardė</th>
+<th>Telefonas</th>
+<th>El. pašto adresas</th>
+<th>Ar lankėsi Italijoje</th>
+</tr>
+</table>
+</div>
+<div class="patients">
+<table id="patients3">
+<caption>Agnė Pociutė</caption>
+<br />
+<tr>
+<th>Vardas</th>
+<th>Pavardė</th>
+<th>Telefonas</th>
+<th>El. pašto adresas</th>
+<th>Ar lankėsi Italijoje</th>
+</tr>
+</table>
+</div>
+<div class="patients">
+<table id="patients4">
+<caption>Judita Savickienė</caption>
+<br />
+<tr>
+<th>Vardas</th>
+<th>Pavardė</th>
+<th>Telefonas</th>
+<th>El. pašto adresas</th>
+<th>Ar lankėsi Italijoje</th>
+</tr>
+</table>
+</div>
+<div class="patients">
+<table id="patients5">
+<caption>Andrius Vaišvila</caption>
+<br />
+<tr>
+<th>Vardas</th>
+<th>Pavardė</th>
+<th>Telefonas</th>
+<th>El. pašto adresas</th>
+<th>Ar lankėsi Italijoje</th>
+</tr>
+</table>
+</div>
+</body>
+</html>

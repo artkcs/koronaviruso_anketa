@@ -1,0 +1,128 @@
+body {
+		background-color:#F5FFFA;
+		text-align:center;
+	}
+.heading {
+		background-color:#FFDAB9;
+		font-family:Helvetica;
+		width:50%;
+		margin:auto;
+		}
+.heading h1 {
+		font-size: 15 px;
+}
+.data {
+		background-color:#FFEFD5;
+		border:none;
+		font-family:Helvetica;
+		width:50%;
+		margin:auto;
+
+	}
+.input-field {
+width: 50%;
+padding: 10px 0;
+margin: 10px 0;
+border-left: 0;
+border-right: 0;
+border-top: 0;
+border-bottom: 0;
+opacity: 60%;
+border-radius: 5px;
+		}
+.input-field:hover {
+		opacity: 90%;
+}
+.rad{
+			display: inline-block;
+			position: relative;
+			cursor: pointer;
+			font-family: Helvetica;
+			font-size: 15px;
+			user-select: none;
+			padding-left: 30px;
+			margin-left: 50 px;
+}
+.rad{
+	margin: 5px;
+}
+.rad input {
+			display: none;
+}
+.rad .circle {
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+			background-color: #FFFFFF;
+			opacity: 60%;
+			 position: absolute;
+			 left: 0;
+			 top: 0;
+			 border-radius: 50%;
+
+}
+.rad:hover .circle {
+			opacity: 90%;
+}
+.rad input:checked + .circle {
+				background-color: #00BFFF;
+}
+.rad input:checked + .circle:after {
+				content: "";
+				height: 10px;
+				width: 10px;
+				background-color: white;
+				position: absolute;
+				border-radius: 50%;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%, -50%);
+}
+#submit-btn {
+			display: inline-block;
+			height: 35px;
+			width: 100px;
+			border: none;
+			background-color: #D2691E;
+			color: white;
+			cursor:pointer;
+			margin-bottom: 5px;
+}
+#submit-btn:hover{
+			background-color: #B8860B;
+}
+#submit-btn:active {
+			background-color: #ffcc66;
+}
+.patients {
+
+		border:none;
+		font-family:Helvetica;
+		width:50%;
+		margin:auto;
+		padding-bottom: 15px;
+}
+.patients table {
+		width:100%;
+		text-align: center;
+}
+.patients caption {
+		background-color: #FFE4C4;
+		font-weight: bold;
+}
+.patients td, th{
+	border: 1px solid #dddddd;
+	text-align: left;
+	padding: 10px;
+}
+.patients tr:nth-child(even){
+	background-color:#dddddd;
+}
+#tbls-heading {
+		margin-top: 50px;
+}
+@media screen and (max-width: 800px) {
+		.heading, .data, .patients {
+				width: 100%;
+		}
+	}
