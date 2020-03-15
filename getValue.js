@@ -5,6 +5,8 @@ document.getElementById("empty2").innerHTML = "Kol kas pacientų neįregistruota
 document.getElementById("empty3").innerHTML = "Kol kas pacientų neįregistruota";
 document.getElementById("empty4").innerHTML = "Kol kas pacientų neįregistruota";
 document.getElementById("empty5").innerHTML = "Kol kas pacientų neįregistruota";
+/*Funkcija nustato, kokiam gydytojui priskirtas pacientas ir į to gydytojo lentelę įrašo jo duomenis
+sukurdama naują eilutę*/
 function addRow () {
 	var tbl;
 	var doc = document.getElementById("doctor");
