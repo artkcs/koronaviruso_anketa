@@ -1,26 +1,39 @@
-var patient = new Array();
+
+document.getElementById("empty0").innerHTML = "Kol kas pacientų neįregistruota";
+document.getElementById("empty1").innerHTML = "Kol kas pacientų neįregistruota";
+document.getElementById("empty2").innerHTML = "Kol kas pacientų neįregistruota";
+document.getElementById("empty3").innerHTML = "Kol kas pacientų neįregistruota";
+document.getElementById("empty4").innerHTML = "Kol kas pacientų neįregistruota";
+document.getElementById("empty5").innerHTML = "Kol kas pacientų neįregistruota";
 function addRow () {
-	var doc = document.getElementById("doctor");
 	var tbl;
+	var doc = document.getElementById("doctor");
 	if (doc.value == 'Gvidas Januškevičius'){
 	tbl = document.getElementById("patients0");
+	document.getElementById("empty0").innerHTML = "";
+
 		}
 	else if (doc.value == 'Karolina Kniežienė'){
 	tbl = document.getElementById("patients1");
+	document.getElementById("empty1").innerHTML = "";
 		}
 	else if (doc.value == 'Jonas Petraitis'){
 	tbl = document.getElementById("patients2");
+	document.getElementById("empty2").innerHTML = "";
 		}
 
 	else if (doc.value == 'Agnė Pociutė'){
 	tbl = document.getElementById("patients3");
+	document.getElementById("empty3").innerHTML = "";
 		}
 	else if (doc.value == 'Judita Savickienė'){
 	tbl = document.getElementById("patients4");
+	document.getElementById("empty4").innerHTML = "";
 		}
 
 	else if (doc.value == 'Andrius Vaišvila'){
 	tbl = document.getElementById("patients5");
+	document.getElementById("empty5").innerHTML = "";
 		}
 	if(document.getElementById("name").value != "" &&
 		document.getElementById("lastname").value != "" &&
