@@ -35,15 +35,14 @@
 	</label>
 	<br />
 	<p>Pasirinkite pageidaujamą gydytoją iš sąrašo</p>
-	<input name="doctor" id="doctor" placeholder="Pasirinkite gydytoją" title="Pasirinkite gydytoją" class="input-field" list="gydytojai" required />
-	<datalist id="doctor">
-		<option value="Gvidas Januškevičius" />
-		<option value="Karolina Kniežienė" />
-		<option value="Jonas Petraitis" />
-		<option value="Agnė Pociutė" />
-		<option value="Judita Savickienė" />
-		<option value="Andrius Vaišvila" />
-	</datalist>
+	<select name="doctor" id="doctor" placeholder="Pasirinkite gydytoją" title="Pasirinkite gydytoją" class="input-field" list="doctor" required>
+		<option value="Gvidas Januškevičius">Gvidas Januškevičius</option>
+		<option value="Karolina Kniežienė" />Karolina Kniežienė</option>
+		<option value="Jonas Petraitis" >Jonas Petraitis</option>
+		<option value="Agnė Pociutė">Agnė Pociutė</option>
+		<option value="Judita Savickienė">Judita Savickienė</option>
+		<option value="Andrius Vaišvila">Andrius Vaišvila</option>
+	</select>
 	<br />
 	<button type="button" id="submit-btn" onclick="addRow();">Registruotis</button>
 	</form>
