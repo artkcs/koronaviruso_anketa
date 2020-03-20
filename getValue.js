@@ -52,7 +52,9 @@ function addRow () {
 	cell2.innerHTML = document.getElementById("lastname").value;
 	cell3.innerHTML = document.getElementById("tel").value;
 	cell4.innerHTML = document.getElementById("email").value;
-	cell5.innerHTML = document.getElementById("been_to_italy").value;
+	if(document.getElementById("been_to_italy_y").checked == true)
+		cell5.innerHTML = document.getElementById("been_to_italy_y").value;
+	else cell5.innerHTML = document.getElementById("been_to_italy_n").value;
 	document.forms["anketa"].reset();
 	}
 	else
